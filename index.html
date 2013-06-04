@@ -19,7 +19,50 @@
 </div>
 
 <!-- Ecrivez vos templates ci-dessous -->
+<script type="text/x-handlebars" data-template-name="application">
+	<header>
+		{{#linkTo index}}<img src="img/logo.png"></img>{{/linkTo}}
 
+		<a class="search_clear" href="#"></a>
+	</header>
+	
+	{{outlet}}
+</script>
+	
+<script type="text/x-handlebars" data-template-name="index">
+	<header>
+		<div>
+			{{input type="search" value=searchTerm}} 
+		</div>
+		<a class="search_clear" href="#"></a>
+	</header>		
+<div id="content">
+	<table>
+		<tr> 
+			 <th> Path </th> 
+			 <th> Method </th> 
+			 <th> Status </th> 
+			 <th> Size </th> 
+			 <th> Time </th> 
+		</tr> 
+		{{#each log in content}}
+		{{#linkTo detail log tagName="tr"}}
+			 <td> {{log.path}} </td> 
+			 <td> {{log.method}}</td> 
+			 <td> {{log.status}} </td>
+			 <td> {{size log.size}} </td>
+			 <td> {{log.date}} </td> 			
+		{{/linkTo}}
+		{{/each}}
+	</table>
+</div>
+</script>	
+
+<script type="text/x-handlebars" data-template-name="detail">
+<div id="content">
+	{{content.useragent}}
+</div>	
+</script>
 <!-- Ecrivez vos templates ci-dessus -->
 
 <script src="js/vendor/jquery-2.0.0.min.js"></script>
