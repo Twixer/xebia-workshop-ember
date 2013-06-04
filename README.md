@@ -2,7 +2,7 @@ Xebia Workshop-ember
 ==============
 
 Ce workshop a été suivi chez Xebia le 4 juin 2013.
-Les différents tags indiquent l'état d'avancement des exercices.
+
 Il y a 13 questions auxquelles il faut répondre pas à pas.
 
 
