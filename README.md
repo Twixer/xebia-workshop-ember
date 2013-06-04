@@ -1,12 +1,11 @@
 Xebia Workshop-ember
 ==============
 
-Ce workshop a Ã©tÃ© suivi chez Xebia le 4 juin 2013.
+Ce workshop a été suivi chez Xebia le 4 juin 2013.
 
-Il y a 13 questions auxquelles il faut rÃ©pondre pas Ã  pas.
+Il y a 13 questions auxquelles il faut répondre pas à pas.
 
-
-PrÃ©-requis
+Pré-requis
 ===============
 - git
 - node.js avec le package express ( *npm install express* )
